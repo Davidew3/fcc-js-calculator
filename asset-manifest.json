@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fcc-js-calculator/static/css/main.4ebc062b.css",
+    "main.js": "/fcc-js-calculator/static/js/main.468a6b69.js",
+    "static/media/logo.svg": "/fcc-js-calculator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/freecc-logo.svg": "/fcc-js-calculator/static/media/freecc-logo.cd4599ddfd0454b14163f9da48227d3d.svg",
+    "index.html": "/fcc-js-calculator/index.html",
+    "main.4ebc062b.css.map": "/fcc-js-calculator/static/css/main.4ebc062b.css.map",
+    "main.468a6b69.js.map": "/fcc-js-calculator/static/js/main.468a6b69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ebc062b.css",
+    "static/js/main.468a6b69.js"
+  ]
+}
