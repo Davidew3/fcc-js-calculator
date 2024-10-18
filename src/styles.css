@@ -1,0 +1,197 @@
+body {
+	height: 100%;
+	background-size: cover;
+	background-color: #273c75;
+	padding: 0.5rem;
+}
+.App {
+	text-align: center;
+	background-color: #273c75;
+	padding: 1rem;
+}
+
+.App-logo {
+	height: 3rem;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-Header {
+	width: 80%;
+	background: #40739e;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	padding: 0.5rem;
+	font-size: 2.5rem;
+	text-align: center;
+	margin: auto;
+	outline: 2px solid white;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.App-fcc-logo {
+	margin-left: calc(10px + 2vmin);
+	height: 10vmin;
+	pointer-events: none;
+}
+.container {
+	width: 300px;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 5px 5px;
+	grid-auto-flow: column;
+	grid-template-areas:
+		'a a a a'
+		'b b c d'
+		'e f g h'
+		'i j k l'
+		'm n o p'
+		'q q r p';
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 0.5rem;
+	background-color: #0097e6;
+	margin-top: 1rem;
+}
+
+#display {
+	grid-area: a;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 2.5rem;
+	padding-right: 0.5rem;
+}
+.btn {
+	border: 1px solid white;
+	background-color: #40739e;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+}
+#clear:hover,
+#equals:hover,
+.btn:hover {
+	border: 1px solid #c7ecee;
+	background-color: #c7ecee;
+	color: #0984e3;
+}
+
+#clear {
+	grid-area: b;
+	background-color: red;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 2rem;
+	color: white;
+}
+
+#divide {
+	grid-area: c;
+}
+#multiply {
+	grid-area: d;
+}
+#subtract {
+	grid-area: h;
+}
+#add {
+	grid-area: l;
+}
+#nine {
+	grid-area: g;
+}
+#eight {
+	grid-area: f;
+}
+#seven {
+	grid-area: e;
+}
+#six {
+	grid-area: k;
+}
+#five {
+	grid-area: j;
+}
+#four {
+	grid-area: i;
+}
+#three {
+	grid-area: o;
+}
+#two {
+	grid-area: n;
+}
+#one {
+	grid-area: m;
+}
+#zero {
+	grid-area: q;
+}
+#decimal {
+	grid-area: r;
+	font-size: 40px;
+}
+#equals {
+	grid-area: p;
+	background-color: #1e3050;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 2rem;
+	color: white;
+}
+@media (max-width: 480px) {
+	body {
+		padding: 0.2rem;
+	}
+	.App {
+		padding: 0.2rem;
+	}
+	.App-Header {
+		font-size: 1rem;
+		padding: 0.2rem;
+	}
+	.container {
+		height: 65%;
+		margin: 0.3rem auto;
+		padding: 0.5px;
+		gap: 1px 1px;
+	}
+	.display {
+		font-size: 1.5rem;
+		padding: 0;
+	}
+	.btn {
+		height: 75%;
+		font-size: 1.5rem;
+	}
+	#decimal,
+	#clear,
+	#equals {
+		font-size: 1.5rem;
+		padding: 0;
+		margin: 2px;
+	}
+	#zero {
+		margin: 2px;
+	}
+}
